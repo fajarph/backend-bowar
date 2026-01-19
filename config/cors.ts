@@ -8,7 +8,7 @@ import { defineConfig } from '@adonisjs/cors'
  */
 const corsConfig = defineConfig({
   enabled: true,
-  origin: true, // ⬅️ BUKAN ['*']
+  origin: ['https://frontend-bowar.vercel.app', 'http://localhost:5173'], // Ganti dengan domain frontend Anda
   methods: ['GET', 'HEAD', 'POST', 'PUT', 'PATCH', 'DELETE', 'OPTIONS'],
   headers: true,
   exposeHeaders: [],
