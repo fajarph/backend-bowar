@@ -9,7 +9,7 @@ export default class ChatController {
      * GET /chat/:warnetId
      * GET /operator/chat/:userId
      */
-    async index({ auth, params, request, response }: HttpContext) {
+    async index({ auth, params, response }: HttpContext) {
         try {
             const authUser = auth.user as User
             const warnetId = params.warnetId // Format varies based on user/operator route
